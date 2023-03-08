@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Safety</title>
+</head>
+<body>
+    <form action="report_safety" method="post">
+        {{ form.student_number.label }}
+        {{ form.student_number }}
+        {{ form.staff_number.label }}
+        {{ form.staff_number }}
+        {{ form.report_number.label }}
+        {{ form.report_number }}
+        {{ form.title.label }}
+        {{ form.title }}
+        {{ form.description.label }}
+        {{ form.description }}
+        {{ form.solution.label }}
+        {{ form.solution }}
+        {{ form.campus.label }}
+        {{ form.campus }}
+        {{ form.location.label }}
+        {{ form.location }}
+        {{ form.urgency.label }}
+        {{ form.urgency }}
+        <!-- {{ form.submit }} -->
+        <!-- <label for="student_number">Student number</label>
+        <input type="text" id='student_number' name='SStudStaffNo' placeholder="student number">
+        <label for="staff_number">Staff number</label>
+        <input type="text" id='staff_number' name='SStudStaffNo' placeholder="staff number">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="STitle" placeholder="title">
+        <label for="description">Describe the safety issue you wish to be sorted</label>
+        <input type="text" id='description' name='SDescription' placeholder="description">
+        <label for="suggestion">Suggest a solution you wish to be implemented</label>
+        <input type="text" id='suggestion' name='SSolution' placeholder="suggestion">
+        <label for="campus">Campus with the safety issue</label>
+        <input type="text" id='campus' name='SCampus' placeholder="campus">
+        <label for="location">The location</label>
+        <input type="text" id='location' name='SLocation' placeholder="location">
+        <label for="urgency">How urgent is the issue?</label>
+        <input type="radio" name="SUrgency" value="urgent">Extremely urgent<br>
+        <input type="radio" name="SUrgency" value="urgent">Urgent<br>
+        <input type="radio" name="SUrgency" value="urgent">Not that urgent<br>
+        <input type="radio" name="SUrgency" value="urgent">Not urgent<br> -->
+
+        <input type="submit" value="Submit"> 
+        <input type="button" value="Edit"> 
+        <input type="button" value="Delete"> 
+        </form>
+</body>
+</html>

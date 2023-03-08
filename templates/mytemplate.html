@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety report</title>
+</head>
+<body>
+    <form method="POST" action="{{ url_for('myroute') }}">
+        {{ form.csrf_token }}
+        <div>
+            {{ form_label(form.my_text) }}
+            {{ form_field(form.my_text, class_='form-control') }}
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>    
+</body>
+</html>
