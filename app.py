@@ -2,51 +2,9 @@
 from flask import Flask, render_template, request, redirect, url_for
 from werkzeug.utils import secure_filename
 import os
-from flask_wtf import FlaskForm
-from wtforms import StringField
-from wtforms.validators import InputRequired, Length
-from other import SafetyReportForm, MyForm
-
-# class MyForm(FlaskForm):
-#     my_text = StringField('My Text', validators=[InputRequired(), Length(max=200)])
 
 # Initialise Flask app
-app = Flask(__name__)
-app.secret_key = 'mysecretkey'
-
-@app.route('/')
-@app.route("/report_safety", methods=['GET','POST'])
-def safety_report():
-    form = SafetyReportForm()
-    if request.method == 'POST' and form.validate():
-        # Save the report to the database or do something else
-        return 'Report submitted successfully'
-    return render_template('safety_report.html', form=form)
-
-# @app.route("/postform/<report_safety>")
-# def safety_report(safety_report):
-#     form = SafetyReportForm()
-#     if request.method == 'POST' and form.validate():
-#         # Save the report to the database or do something else
-#         return 'Report submitted successfully'
-#     return render_template('safety_report.html', form=form)
-
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    if request.method == 'POST':
-        selected_option = request.form['options']
-        return f"You selected {selected_option}"
-    return render_template('index.html')
-
-
-@app.route('/myroute', methods=['GET', 'POST'])
-def myroute():
-    form = MyForm()
-    if request.method == 'POST' and form.validate():
-        
-        return 'Form submitted successfully'
-    return render_template('mytemplate.html', form=form)
-
+app = Flask("__maintenance_app__")
 
 # Define allowed file extensions for picture upload
 ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png', 'gif'}
@@ -118,6 +76,3 @@ def allowed_file(filename):
 # Configure app to allow picture uploads and set upload folder
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024 # 16 MB max file size
-
-if __name__=='__main__':
-    app.run(debug=True)
