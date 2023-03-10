@@ -1,16 +1,24 @@
 # Import required libraries
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask,flash, render_template, request, redirect, url_for
 from werkzeug.utils import secure_filename
 import os
 
 # Initialise Flask app
 app = Flask("__maintenance_app__")
+app.config['UPLOAD_FOLDER'] = 'uploads'
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024 # 16 MB max file size
+
 
 # Define allowed file extensions for picture upload
 ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png', 'gif'}
 
 # Define route for the Maintenance Report page
-@app.route('/maintenance_report', methods=['GET', 'POST'])
+
+
+
+
+# Define route for the Maintenance Report page
+@app.route('/', methods=['GET', 'POST'])
 def maintenance_report():
     # Check if request method is POST
     if request.method == 'POST':
@@ -62,7 +70,6 @@ def maintenance_report():
         # Render Maintenance Report form
         return render_template('maintenance_report.html')
 
-# Define route for the Maintenance Report success page
 @app.route('/maintenance_report/success')
 def maintenance_report_success():
     # Render success page
@@ -73,6 +80,4 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-# Configure app to allow picture uploads and set upload folder
-app.config['UPLOAD_FOLDER'] = 'uploads'
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024 # 16 MB max file size
+app.run(debug=True,port=5100,host= "0.0.0.0")
