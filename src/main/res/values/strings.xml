@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Dut Clinic App</string>
+    <string name="txtLogin">Already have an account? Login</string>
+    <string name="edtemail">Enter Dut Email</string>
+    <string name="edtpwd">Enter Password</string>
+    <string name="btnsignup">Sign Up</string>
+    <string name="btnlogout">Logout</string>
+    <string name="textView8">Dut Student / Staff Login</string>
+    <string name="textView9">Dut Student / Staff Sign Up</string>
+    <string name="textView10">Current User:</string>
+    <string name="txtvCurrentUser">User</string>
+
+    <string name="txtsignup">Dont have an account? Sign Up</string>
+    <string name="edtemaill">Enter Dut Email</string>
+    <string name="edtpwdl">Enter Password</string>
+    <string name="btnlogin">Login</string>
+    <string name="txtvforgotpwd">Forgot password?</string>
+
+    <string name="txtviewMain">Dut clinic app made for students and staff to make clinical appointments</string>
+    <string name="txtVMain1">Dut Clinic App Select your role:</string>
+    <string name="btnStaffStud">I am Student/Staff</string>
+    <string name="btnClinicAdminLogin">I am Clinic Staff</string>
+
+
+    <string name="txtCALogin">Dut Clinic Admin Login</string>
+    <string name="txtvCampus">Campus</string>
+    <string-array name="campus">
+        <item>Steve Biko</item>
+        <item>Ritson</item>
+        <item>ML Sultan</item>
+        <item>City Campus</item>
+        <item>Midlands</item>
+        <item>iNdumiso</item>
+        <item>Riverside</item>
+    </string-array>
+    <string name="edtpwdcal">Password</string>
+    <string name="btnlogincal">Login</string>
+    <string name="txtvCampusSelect">Select your Campus</string>
+
+
+    <string name="book">Book</string>
+    <string name="book_an_appointment">Make an Appointment</string>
+    <string name="select_campus">Select Campus</string>
+    <string name="select_date">Select date</string>
+    <string name="click_here_to_the_select_date">Click here to the select date</string>
+    <string name="choose_date">Choose date</string>
+    <string name="_4_5_2023">4/5/2023</string>
+    <string name="select_date_below">Select date below</string>
+    <string name="select_another_date">Select another date</string>
+    <string name="select_a_date">Select a date</string>
+    <string name="select_a_time_slot">Select a time slot</string>
+    <string name="book_appointment">Book appointment</string>
+    <string name="enter_student_number">Enter student number</string>
+    <string name="txtbooking_successful">Successfully Made Appointment!</string>
+    <string name="txtBuser">user</string>
+
+    <string-array name="spnItems">
+        <item>Ritson</item>
+        <item>Steve Biko</item>
+        <item>ML Sultan</item>
+        <item>Brickfield</item>
+        <item>City Campus</item>
+        <item>Riverside</item>
+        <item>Indumiso</item>
+    </string-array>
+
+    <string name="btnLogoutAcc">Logout</string>
+    <string name="btnCancelAppt">Cancel Appointment</string>
+    <string name="btnMakeAppt">Make Appointment </string>
+    <string name="btnViewAppt">My Appointments</string>
+    <string name="btnmedrecord">My Medical Records</string>
+
+    <string name="txtCancelEmail">Cancel Appointment Email</string>
+    <string name="txtTO">To: Dut Clinic</string>
+    <string name="txtSubject">Subject: Clinic Appointment Cancel Reason</string>
+    <string name="edtMessage">Type here your reason and student number </string>
+    <string name="btnsend">Send</string>
+    <string name="btnViewAllAppt">View All Appointments</string>
+    <string name="btndatefilter">Filter</string>
+
+
+    <string name="btnMakeMedReports">Add Medical Records</string>
+    <string name="btnViewMedRecords">View Medical Records</string>
+    <string name="txtvClinicHome">DUT Clinic</string>
+
+    <string name="btnbackhomescreen">Back To Home</string>
+
+    <string name="textView2">Add Medical Record</string>
+    <string name="edtPatientEmail">Enter Patient Dut Email</string>
+    <string name="edtPractitionerName">Enter Practitioner Name</string>
+    <string name="edtIllness">Enter name and cause of illness</string>
+    <string name="btnSelectDate2">Select Date of Check Up</string>
+    <string name="edtMedicine">Enter medication details</string>
+    <string name="btnAddmr">Add Med Record</string>
+
+    <string name="txtCancelSuccess">Your Appointment was Cancel Successfully</string>
+    <string name="btnbackhm">Back to Home</string>
+    <string name="txtMedSuccess">Medical Record has been Added</string>
+    <string name="btnbackmain1">Back to Main Screen</string>
+    <string name="btnbackmain2">Back to Main Screen</string>
+    <string name="btnbackmain3">Back to Home Screen</string>
+
+</resources>
