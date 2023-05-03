@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgrdb"
+    tools:context=".Login"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/txtsignup"
+        android:layout_width="289dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/txtsignup"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/btnlogin"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/btnlogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin" />
+
+    <EditText
+        android:id="@+id/edtemaill"
+        android:layout_width="292dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="108dp"
+        android:autofillHints=""
+        android:fontFamily="sans-serif-black"
+        android:hint="@string/edtemaill"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:ignore="TextFields,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtpwdl"
+        android:layout_width="292dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="64dp"
+        android:autofillHints=""
+        android:fontFamily="sans-serif-black"
+        android:hint="@string/edtpwdl"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtemaill"
+        app:layout_constraintStart_toStartOf="@+id/edtemaill"
+        app:layout_constraintTop_toBottomOf="@+id/edtemaill"
+        tools:ignore="TextFields,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="@string/btnlogin"
+        app:layout_constraintEnd_toEndOf="@+id/edtpwdl"
+        app:layout_constraintStart_toStartOf="@+id/edtpwdl"
+        app:layout_constraintTop_toBottomOf="@+id/edtpwdl" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/textView8"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnbackmain1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/btnbackmain1"
+        app:layout_constraintEnd_toEndOf="@+id/txtsignup"
+        app:layout_constraintStart_toStartOf="@+id/txtsignup"
+        app:layout_constraintTop_toBottomOf="@+id/txtsignup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
